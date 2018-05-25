@@ -46,16 +46,20 @@ class Album extends Component {
     }
   }
 
-  onMouseEnter(e) {
+  onMouseEnter(e, song) {
+    if (this.state.isPlaying && this.state.currentSong === song) {
+      e.target.className = "ion-md-pause"
+    } else {
       e.target.className = "ion-md-play"
     }
+  }
 
   onMouseLeave(e) {
     e.target.className = "song-number"
   }
 
-  playPause(e) {
-    if (this.state.isPlaying) {
+  playPause(e, song) {
+    if (this.state.isPlaying && this.state.currentSong === song) {
       e.target.className = "ion-md-play"
     } else {
       e.target.className = "ion-md-pause"
@@ -84,9 +88,9 @@ class Album extends Component {
             { this.state.album.songs.map( (song, index) =>
               <tr className="song" key={ index } onClick={() => this.handleSongClick(song)}>
                 <td className="song-number"
-                  onMouseEnter={(e) => this.onMouseEnter(e)}
+                  onMouseEnter={(e) => this.onMouseEnter(e, song)}
                   onMouseLeave={(e) => this.onMouseLeave(e)}
-                  onClick={(e) => this.playPause(e)}>
+                  onClick={(e) => this.playPause(e, song)}>
                         { index + 1 }. {song.title} {song.duration} seconds
                 </td>
               </tr>
