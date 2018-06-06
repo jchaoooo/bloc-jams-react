@@ -1,0 +1,25 @@
+body {
+  background-image: url(./../images/landing_background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.selling-points {
+  float: right;
+  padding-right: 100px;
+  padding-top: 90px;
+  width: 400px;
+  color: white;
+}
+
+.hero-title {
+  float: left;
+  padding: 300px 0px 0px 100px;
+  color: white;
+  font-size: 80px;
+  width: 400px;
+  line-height: 80px;
+}
