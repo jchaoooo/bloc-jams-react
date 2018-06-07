@@ -1,0 +1,34 @@
+.library-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5% 10% 10% 10%;
+}
+
+.library-column {
+  flex: 20%;
+  padding: 0 4px;
+}
+
+.library-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  max-width: 95%;
+}
+
+.library-column div {
+  color: black;
+}
+
+@media screen and (max-width: 800px) {
+  .library-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .library-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}

@@ -11,9 +11,11 @@ class App extends Component {
       <div className="App">
         <header>
           <nav>
-            <Link to='/'>Landing</Link>
-            <Link to='/library'>Library</Link>
-          </nav>  
+            <Link to='/' className="logo">
+              <img src='images/blocjams_logo.png' alt="blocjams logo" />
+            </Link>
+            <Link to='/library' className="library">Library</Link>
+          </nav>
         </header>
         <main>
           <Route exact path="/" component={Landing} />

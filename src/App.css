@@ -3,6 +3,25 @@
  body {
    font-family: 'Catamaran', san-serif;
  }
+
+ header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.5;
+    height: 7%;
+ }
+
+
+ .logo {
+   float: left;
+ }
+
+.library {
+  float: right;
+}
+
 .App {
   text-align: center;
 }
