@@ -12,7 +12,7 @@ class App extends Component {
         <header>
           <nav>
             <Link to='/' className="logo">
-              <img src='images/blocjams_logo.png' alt="blocjams logo" />
+              <img src={require('./images/bloc_jams_logo.png')} alt="blocjams logo" width="70"/>
             </Link>
             <Link to='/library' className="library">Library</Link>
           </nav>

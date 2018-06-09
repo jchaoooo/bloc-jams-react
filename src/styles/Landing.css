@@ -7,6 +7,11 @@ body {
   background-color: #464646;
 }
 
+h1 {
+  font-family: 'Luckiest Guy', cursive;
+  letter-spacing: 0.1vw;
+}
+
 .selling-points {
   float: right;
   padding-top: 10%;
@@ -25,7 +30,20 @@ body {
   line-height: 7vw;
   float: left;
   width: 40%;
-  text-align: center;
+}
+
+.point img {
+  margin: 0;
+  padding-top: 1vw;
+}
+
+.point h2 {
+  margin: 0;
+}
+
+.point p {
+  margin: 0;
+
 }
 
 

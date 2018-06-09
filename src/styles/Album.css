@@ -1,0 +1,38 @@
+#album-info {
+  float: left;
+  padding: 14% 0% 0% 10%;
+  min-width: 30%;
+}
+
+.album-description {
+  float: right;
+  clear: right;
+  background-color: rgb(255,255,255, 0.4);
+  padding: 3vw 6vw;
+  margin: 14% 8% 0vw 0vw;
+}
+
+#album-title {
+  font-size: 30px;
+  margin: 0;
+  text-align: left;
+}
+
+.artist {
+  font-size: 20px;
+  margin: 0;
+  text-align: left;
+}
+
+#release-info {
+  text-align: left;
+}
+
+#song-list {
+  text-align: left;
+  width: 30vw;
+}
+
+td {
+  border-bottom: 1px solid grey;
+}
