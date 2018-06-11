@@ -1,0 +1,37 @@
+.player-bar {
+  width: 348px;
+  margin-top: -9px;
+  margin-left: 1px;
+}
+
+#previous, #play-pause, #next {
+  margin: 10px 3px 3px 3px;
+  width: 40px;
+  font-size: 20px;
+  background-color: transparent;
+  color: black;
+  border: none;
+
+}
+
+#time-control, #volume-control {
+  display: inline-block;
+}
+
+.current-time, .total-time {
+  float: left;
+  display: block;
+  width: 27px;
+}
+
+
+.seek-bar {
+  padding: 0;
+  margin: 5px 15px 0 15px;
+  float: left;
+}
+
+
+.ion-md-volume-low, .ion-md-volume-high {
+  float: left;
+}

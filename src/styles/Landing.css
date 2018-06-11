@@ -7,9 +7,10 @@ body {
   background-color: #464646;
 }
 
-h1 {
+.hero-title {
   font-family: 'Luckiest Guy', cursive;
   letter-spacing: 0.1vw;
+  text-shadow: 4px 4px 5px rgba(0,0,0,0.3);
 }
 
 .selling-points {
@@ -18,6 +19,7 @@ h1 {
   padding-right: 5vw;
   width: 40%;
   color: white;
+  text-shadow: 2px 3px 3px rgba(0,0,0,0.1);
 }
 
 .hero-title {

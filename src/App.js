@@ -14,7 +14,9 @@ class App extends Component {
             <Link to='/' className="logo">
               <img src={require('./images/bloc_jams_logo.png')} alt="blocjams logo" width="70"/>
             </Link>
-            <Link to='/library' className="library">Library</Link>
+            <Link to='/library' className="library">
+              <img src={require("./images/library_icon.png")} alt="library_icon" width="50" />
+            </Link>
           </nav>
         </header>
         <main>

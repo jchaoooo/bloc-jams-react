@@ -138,12 +138,12 @@ class Album extends Component {
     }
   }
 
-
   render() {
     return(
       <section className="album">
         <section id="album-info">
           <img id="album-cover-art" src={this.state.album.albumCover} alt={this.state.album.title} />
+          <div className="song-playing">{this.state.album.title} - {this.state.currentSong.title}</div>
           <PlayerBar
             isPlaying={this.state.isPlaying}
             currentSong={this.state.currentSong}
@@ -177,8 +177,9 @@ class Album extends Component {
                     onMouseEnter={(e) => this.onMouseEnter(e, song)}
                     onMouseLeave={(e) => this.onMouseLeave(e)}
                     onClick={(e) => this.playPause(e, song)}>
-                          { index + 1 }. {song.title} {this.formatTime(song.duration)}
+                          {`  `}{ index + 1 }.  {song.title}
                   </td>
+                  <td className="song-duration">{this.formatTime(song.duration)}</td>
                 </tr>
               )}
             </tbody>

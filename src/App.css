@@ -22,6 +22,7 @@
 
 .library {
   float: right;
+  padding: .5vw 1.5vw .2vw 0;
 }
 
 .App {
